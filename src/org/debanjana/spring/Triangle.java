@@ -25,7 +25,7 @@ public class Triangle {
 	}
 	
 	public void draw() {
-		
+		System.out.println("Point A: (" + getPointA().getX() + "," + getPointA().getY() + "), Point B: (" + getPointB().getX() + "," + getPointB().getY() + "), Point C: (" + getPointC().getX() + "," + getPointC().getY() + ")");
 	}
 }
 
