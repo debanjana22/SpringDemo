@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="triangle" class="org.debanjana.spring.Triangle">
+		<!-- <property name="type" value="Equilateral" /> For setters -->
+		<constructor-arg type="java.lang.String" value="Equilateral" /> <!-- type, index="0" is optional -->
+		<constructor-arg type="int" value="20" /> <!-- if second arg value is passed, the constructor with 2 args will be called  -->
+	</bean>
+
+</beans>
