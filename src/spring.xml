@@ -4,8 +4,22 @@
 <beans>
 	<bean id="triangle" class="org.debanjana.spring.Triangle">
 		<!-- <property name="type" value="Equilateral" /> For setters -->
-		<constructor-arg type="java.lang.String" value="Equilateral" /> <!-- type, index="0" is optional -->
-		<constructor-arg type="int" value="20" /> <!-- if second arg value is passed, the constructor with 2 args will be called  -->
+		<!-- <constructor-arg type="java.lang.String" value="Equilateral" /> type, index="0" is optional -->
+		<!-- <constructor-arg type="int" value="20" /> if second arg value is passed, the constructor with 2 args will be called  -->
+		<property name="pointA" ref="zeroPoint" />
+		<property name="pointB" ref="point2" />
+		<property name="pointC" ref="point3" />
 	</bean>
-
+	<bean id="zeroPoint" class ="org.debanjana.spring.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	<bean id="point2" class ="org.debanjana.spring.Point">
+		<property name="x" value="-20" />
+		<property name="y" value="0" />
+	</bean>
+		<bean id="point3" class ="org.debanjana.spring.Point">
+		<property name="x" value="0" />
+		<property name="y" value="20" />
+	</bean>
 </beans>

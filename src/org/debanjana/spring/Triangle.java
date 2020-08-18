@@ -23,6 +23,10 @@ public class Triangle {
 	public void setPointC(Point pointC) {
 		this.pointC = pointC;
 	}
+	
+	public void draw() {
+		
+	}
 }
 
 //private String type;
